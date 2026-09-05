@@ -29,8 +29,8 @@ var lyricsData = [
   { text: "Como recordatorio de nuestra amistad", time: 169 },
   { text: "Sos una genia total", time: 176 },
   { text: "Te quiero un montón, nunca lo dudes", time: 183 },
-  { text: "¡Feliz día! ", time: 188 },
-  { text: "🌻💛", time: 140 }
+  { text: "¡Feliz día!", time: 188 },
+  { text: "🌻💛", time: 193 } // <-- Tiempo corregido para que salga al final
 ];
 
 // Animar las letras
@@ -57,15 +57,15 @@ function updateLyrics() {
 
 setInterval(updateLyrics, 1000);
 
-//funcion titulo
 // Función para ocultar el título después de 216 segundos
 function ocultarTitulo() {
   var titulo = document.querySelector(".titulo");
-  titulo.style.animation =
-    "fadeOut 3s ease-in-out forwards"; /* Duración y función de temporización de la desaparición */
-  setTimeout(function () {
-    titulo.style.display = "none";
-  }, 3000); // Espera 3 segundos antes de ocultar completamente
+  if(titulo) { // Siempre es buena práctica verificar si el elemento existe
+    titulo.style.animation = "fadeOut 3s ease-in-out forwards"; 
+    setTimeout(function () {
+      titulo.style.display = "none";
+    }, 3000); 
+  }
 }
 
 // Llama a la función después de 216 segundos (216,000 milisegundos)
