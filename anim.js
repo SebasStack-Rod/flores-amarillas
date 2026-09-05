@@ -6,7 +6,7 @@ var lyrics = document.querySelector("#lyrics");
 var lyricsData = [
 { text: "Mamá, en cada momento", time: 15 },
 { text: "Tu voz es como un refugio", time: 18 },
-{ text: "En los días grises y difíciles", time: 27 },
+{ text: "En  los días grises y difíciles", time: 27 },
 { text: "Tu apoyo nunca me faltó", time: 32 },
 { text: "Cuidando de mis pasos siempre", time: 33 },
 { text: "¿Cómo agradecerte tanto amor?", time: 41 },
