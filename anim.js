@@ -30,7 +30,7 @@ var lyricsData = [
   { text: "Como recordatorio de nuestra amistad", time: 169 },
   { text: "Sos una genia total", time: 176 },
   { text: "Te quiero un montón, nunca lo dudes", time: 183 },
-  { text: "¡Feliz día!", time: 188 },
+  { text: "¡Feliz día! ", time: 188 },
   { text: "🌻💛", time: 140 }
 ];
 
