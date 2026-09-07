@@ -4,7 +4,7 @@ var lyrics = document.querySelector("#lyrics");
 
 // Array de objetos que contiene cada línea y su tiempo de aparición en segundos
 var lyricsData = [
-  { text: "Che Belu, amiga querida", time: 15 },
+  { text: " Che Belu, amiga querida", time: 15 },
   { text: "Ya sabés qué fecha es", time: 18 },
   { text: "Y obvio que me acordé de vos", time: 27 },
   { text: "No podía dejar pasar este día", time: 32 },
