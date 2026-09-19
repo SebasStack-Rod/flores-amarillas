@@ -23,24 +23,20 @@
     </div>
 
     <div class="regalos">
-        <button type="button" class="regalo" id="regalo1">REGALO 1</button>
-        <a href="flower.html" class="regalo" id="regalo2">REGALO 2</a>
+        <button type="button" class="regalo regalo--1" id="regalo1">🎁 REGALO 1</button>
+        <a href="flower.html" class="regalo regalo--2" id="regalo2">🎁 REGALO 2</a>
     </div>
 
     <p class="nota">Por el bien de la sorpresa, elegí el regalo 1 porque el segundo es para computadora.</p>
 
     <div class="mensaje" id="mensaje" hidden>
-        <p>Salí afuera de tu casa 💙💙💙.</p>
-        <p class="mensaje__fin">💙💙💙</p>
+        <p>Salí afuera de tu casa 💙💙💙</p>
     </div>
 
     <script>
         document.getElementById("regalo1").addEventListener("click", function () {
-            var mensaje = document.getElementById("mensaje");
-            mensaje.hidden = false;
-            mensaje.classList.remove("mensaje--visible");
-            void mensaje.offsetWidth; // reinicia la animación si vuelve a tocar el botón
-            mensaje.classList.add("mensaje--visible");
+            document.body.classList.add("solo-mensaje");
+            document.getElementById("mensaje").hidden = false;
         });
     </script>
 </body>
